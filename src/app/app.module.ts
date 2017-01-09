@@ -4,15 +4,26 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { LandingComponent } from './landing/landing.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { TodoComponent } from './todo/todo.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LandingComponent,
+    NavbarComponent,
+    FooterComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
